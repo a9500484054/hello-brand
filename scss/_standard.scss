@@ -1,0 +1,172 @@
+.icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    &::after {
+        content: "";
+
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.icon-phone {
+    &::after {
+        background:url("./images/call-calling.svg");
+        background-repeat: no-repeat;
+    }
+}
+.icon-phone-gold {
+    &::after {
+        background:url("./images/call-calling-gold.svg");
+        background-repeat: no-repeat;
+    }
+}
+.icon-clock {
+    &::after {
+        background:url("./images/clock.svg");
+        background-repeat: no-repeat;
+    }
+}
+.icon-map {
+    &::after {
+        background:url("./images/map.svg");
+        background-repeat: no-repeat;
+    }
+}
+.icon-sms {
+    &::after {
+        background:url("./images/sms.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+/* Устанавливаем размер родительского контейнера */
+.swiper-container {
+width: 100%;
+height: 300px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 29px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.swiper-slide {
+    width: 100%;
+    
+}
+
+.swiper-button-prev-2 {
+    position: static !important;
+}
+.swiper-button-next-2 {
+    position: static !important;
+}
+
+@media (min-width: $screen-table) {
+    .swiper-slide {
+        width: 60%;
+        margin: 0 15px;
+    }
+    
+    .swiper-slide:nth-child(2n) {
+        width: 60%;
+    }
+    
+    .swiper-slide:nth-child(3n) {
+        width: 60%;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    background: #ffffff; /* задайте нужный вам фон заголовка */
+    z-index: 1000; /* при необходимости измените значение z-index для слоев */
+    transform: translateY(-10%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sticky-header.visible {
+    transform: translateY(0%);
+    background-color: #3a4574b1 !important;
+    padding: 10px 0 ;
+  }
+
+  .photo-zoom {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo-zoom img {
+    transition: transform 0.5s ease-out;
+  }
+  
+  .photo-zoom:hover img {
+    transform: scale(1.2);
+  }
+  
+  .photo-zoom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .photo-zoom:hover::before {
+    opacity: 1;
+  }
+  
+  .photo-zoom:hover::after {
+    opacity: 1;
+  }
+
+//   .menu--active {
+// 	background: #3A4574;
+//     height: 110vh;
+//     width: 85vw;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: start;
+//     padding: 15px;
+//   }
+
+  
+// .header-menu__list--active {
+//     flex-direction: column !important;
+//     align-items: center !important;
+//     li {
+//         margin: 0;
+//         margin-bottom: 20px;
+//     }
+//     a {
+//         font-size: 20px;
+//     }
+// }

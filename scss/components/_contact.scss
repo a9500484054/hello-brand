@@ -1,0 +1,64 @@
+.contact {
+  padding-top: 404px;
+  &__title{
+    margin-bottom: 35px;
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    width: 64px;
+    height: 64px;
+    background-color: #D3B47F;
+    border-radius: 50px;
+  }
+  &__item-list {
+  }
+  &__item-title {
+    color: #2E2E2E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+  }
+  &__item-text {
+    color: #2E2E2E;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__item-link {
+    color: #2E2E2E;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+@media (min-width: $screen-desktop) {
+  
+}
+
+
+

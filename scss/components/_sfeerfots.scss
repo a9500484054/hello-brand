@@ -1,0 +1,66 @@
+.sfeerfots {
+    background: #3A4574;
+    padding-top: 68px;
+    padding-bottom: 106px;
+    &__title {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 183.333% */
+    }
+    &__text {
+        padding: 0;
+        margin: 0;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+    }
+    &__wrapper-btn {
+        max-width: 170px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.sf {
+    position: absolute;
+    top: 302px;
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+    .sfeerfots {
+        background: #3A4574;
+        padding-top: 68px;
+        padding-bottom: 393px;
+        &__title {
+            color: #FFF;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 88px; /* 183.333% */
+        }
+        &__text {
+            padding: 0;
+            margin: 0;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+        }
+    }
+    
+    .sf {
+        position: absolute;
+        top: 263px;
+    }
+}

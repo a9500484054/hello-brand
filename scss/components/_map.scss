@@ -1,0 +1,23 @@
+.map {
+    padding-top: 50px;
+    &__iframe {
+        width:100%; 
+        height:547px;
+    }
+}
+
+
+
+@media (min-width: $screen-table) {
+    map {
+
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    map {
+
+    }
+}
+
+
